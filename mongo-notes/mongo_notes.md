@@ -6,7 +6,7 @@ mongodump --host localhost:27017 --gzip --db <veritabanı adı> --out ./<veritab
 ```
 
 > [!Example]
-> **mongodump --host localhost:27017 --gzip --db vipsafe_bplus --out ./Desktop/**
+> **mongodump --host localhost:27017 --gzip --db plus_database --out ./Desktop/**
 
 
 ### mongorestore
@@ -17,7 +17,7 @@ mongorestore --host=127.0.0.1:27017 --db=<veritabanı adı> --gzip ./<bson.gz do
 ```
 
 > [!Example]
-> **mongorestore --host=127.0.0.1:27017 --db=vipsafe_bplus --gzip ./vipsafe_bplus/raw_frames.bson.gz**
+> **mongorestore --host=127.0.0.1:27017 --db=plus_database --gzip ./raw_frames.bson.gz**
 
 
 ### mongosh
