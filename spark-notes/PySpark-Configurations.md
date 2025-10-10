@@ -94,13 +94,19 @@ Spark Uygulaması çalışırken *Environment* menüsü altından
 ![[Pasted image 20251003104846.png]]
 
 
+Source: https://medium.com/@nikaljeajay36/viewing-and-setting-apache-spark-configurations-bde06ed13def
+
 ---
+
+
+
+
 
 ## spark-env.sh
 
 ### spark-env.sh conf dosyasini tam aktif etmek icin
 
-- bazi durumlarda Spark UI'da guncellemlerin gelmedigi gorulmustur bu yuzden bu isleme ihtiyac dogmustur.
+- Bazi durumlarda Spark UI'da güncellemelerin gelmedigi görülmüştür bu yüzden bu işleme ihtiyac dogmustur.
 
 ```
 $ pkill -f 'org.apache.spark.deploy.worker.Worker'

@@ -46,4 +46,15 @@ $ show collections
 $ db.<koleksiyon_adi>.find().limit(2)
 ```
 
-- 
+- kolesksiyona ait istatistikleri gormek icin
+
+```
+$ db.<koleksiyon_adi>.stats()
+```
+
+- terminali temizle
+
+```
+$ cls
+```
+

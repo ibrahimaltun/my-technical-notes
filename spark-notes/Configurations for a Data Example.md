@@ -1,5 +1,5 @@
 
-##### 100GB boyuta sahip bir veriyi nasil verimli bir sekilde nasil isleyebiliriz?
+##### 100GB boyuta sahip bir veriyi verimli bir sekilde nasil isleyebiliriz?
 
 
 **Gerekli Executor Core Sayısı**
