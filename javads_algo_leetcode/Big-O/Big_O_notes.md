@@ -57,7 +57,7 @@ public class Main {
 }
 ```
 
-* Bu yüzden bu kod **O(n)**'dir deriz. Çünkü n tane değerimiz vardır ve for döngümüzde 10 tane işlem gerçekleştiririz. Bunu bir grafiğe döksek n x eksenini ifade ederken y eksenimiz ise işlem sayımızı ifade eder. Bu grafikte her zaman O(n) bir doğru şeklinde olacaktır. Buna proportional(orantılılık) denir.
+* Bu yüzden bu kod **O(n)**'dir deriz. Çünkü n tane değerimiz vardır ve for döngümüzde 10 tane işlem gerçekleştiririz. Bunu bir grafiğe döksek n, x eksenini ifade ederken, y eksenimiz ise işlem sayımızı ifade eder. Bu grafikte her zaman O(n) bir doğru şeklinde olacaktır. Buna proportional(orantılılık) denir.
 
 ![Pasted image 20250908113836.png](/images_for_notes/Pasted%20image%2020250908113836.png)
 
@@ -87,12 +87,12 @@ public class Main {
 
 * Burada her bir for döngümüz için n işlem vardır. Toplamda n + n = 2n işlem vardır ve Big-O gösterimimiz O(2n) olmasını bekleriz. Fakat bunu basitleştirmek için constant olan 2 değerini düşürüyoruz. Böylece sadece O(n) olur.
 * Burada sabitin kaç olduğunun önemi yoktur. 2, 10 veya 100 olsa bile sabiti kaldırırız. O(n) kalır.
-* Basitleştirmenin ilk kuralı budur: Drop Constant
+* Basitleştirmenin ilk kuralı budur: **Drop Constant**
 
 
 #### O(n^2)
 
-Önceki kodumuzu O(n^2) yapmak için bir for loop'u diğerinin içine alırız.
+Önceki kodumuzu O($n^2$) yapmak için bir for loop'u diğerinin içine alırız.
 
 i ve j yi toplama yapmayıp gerçek çıktıyı görmek için araya boş bir String ifade ekleyelim.
 
@@ -115,21 +115,21 @@ public class Main {
 
 Çıktıya baktığımız zaman önce ilk i değeri 0 ve sonra tüm j değerleri şeklinde bir yapı ilerler.
 
-* Buradan yola çıkarak döngüler n * n = n^2 şeklinde çalışır.
-* Diyelimki n'e 10 değerini verdik çıktımız da 100 satırımız olur.
+* Buradan yola çıkarak döngüler n * n = $n^2$ şeklinde çalışır.
+* Diyelimki n'e 10 değerini verdik çıktımızda 100 satırımız olacaktır.
 
 ![Pasted image 20250916093409.png](/images_for_notes/Pasted%20image%2020250916093409.png)
 
 
 * O(n) ile kıyaslandığında çok çok hızlı bir şekilde büyüdüğünü görüyoruz. Time Complexity açısından bunun anlamı daha az verimli demektir.
-* Eğer O(n^2) olan bir kodunuz varsa ve bu kodu yeniden yazabiliyorsanız, kodunuzu O(n) yapmak devasa bir verim kazancı sağlayacaktır.
+* Eğer O($n^2$) olan bir kodunuz varsa ve bu kodu yeniden yazabiliyorsanız, kodunuzu O(n) yapmak devasa bir verim kazancı sağlayacaktır.
 
 
 
 #### Drop Non-Dominants
 
 - Big-O'yu basitleştirmek için diğer bir yol
-- O(n^2) deki nested for döngülerimizi düşünelim. Bu kodumuza bir tane daha ayrık ve bağımsız bir for loop eklediğimizi düşünelim.
+- O($n^2$) deki nested for döngülerimizi düşünelim. Bu kodumuza bir tane daha ayrık ve bağımsız bir for loop eklediğimizi düşünelim.
 ``` java
 public class Main {  
       

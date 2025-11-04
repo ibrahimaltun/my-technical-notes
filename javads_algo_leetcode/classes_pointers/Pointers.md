@@ -1,2 +1,0 @@
-- Pointers kavramı, Veri Yapılarına girmek istediğimize anlamamız gereken önemli bir kavram olarak karşımıza çıkıyor.
-- 

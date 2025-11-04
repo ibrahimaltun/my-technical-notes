@@ -2,7 +2,7 @@
 - Class'lar bir Cookie Kesiciye benzerler. Cookie kesici aslında bir cookie değildir. Fakat cookie kesici kullanarak bir cookie oluşturabiliriz.
 - Şimdi aşağıda bir Cookie isimli class oluşturalım. Class'lar, class değişkenlerine sahiptir.
 - Burada değişkenler için private yapmak best practice'dir.
-- Sınıflarımız içinde metotlarımız vardır. İlk methodumuzu constructo ismiyle oluştururuz. Bu method bize cookie cutter kullanarak yeni bir cookie oluşturmamıza yardımcı olacak.
+- Sınıflarımız içinde metotlarımız vardır. İlk methodumuzu constructor ismiyle oluştururuz. Bu method bize cookie cutter kullanarak yeni bir cookie oluşturmamıza yardımcı olacak.
 - Constructor Method her zaman class adını alır. Bundan dolayı Cookie olarak adlandıracağız ve constructor çalştırdığımızda color parametresini bu methoda geçireceğiz. Bu color'ın ne olduğunu bize söyleyecek. Aşağıdaki şekilde atamayı tamamlayacağız.
 
 ```java
