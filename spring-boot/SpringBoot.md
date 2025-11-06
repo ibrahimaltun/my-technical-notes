@@ -33,4 +33,79 @@
 - Geliştirme Zorluklarını Azaltma
 - Kolay Dağıtım
 
+---
+
+**Micro Service nedir?**
+
+- Mikroservis mimarisi geliştiriclere bir servisi diğer servislerden bağımsız olarak geliştirme ve dağıtma olanağı sağlayan bir mimaridir. Herbir servis kendi işlemlerine sahiptir ve böyle olması onu iş uygulamalarını desteklemek için hafif bir model olmasını sağlar.
+- Microservice'ler, bileşenler veya service'lerin çok küçük, birbirleriyle bağlantısı zayıf olan ve bağımsız olarak dağıtılabilir olan mimari bir yaklaşımdır. Herbir servis diğerlerinden etkilenmeden yani bağımsız bir şekilde geliştirilebilir, test edilebilir ve dağıtılabilirdir.
+- Monolithic mimari de ise tüm süreçler tek bir servistir ve birbiriyle sıkı bağlıdır.
+
+Spring Boot ise Java geliştiricileri için bir spring uygulamasını ürün-seviyesine ve bağımsız bir şekilde geliştirme imkanı sağlayan ve bunu sadece-çalıştır mantığıyla yapan iyi bir platformdur.
+
+- **Spring** uygulmalarının anlamayı ve geliştirmeyi kolaylaştıran bu sayede üretkenliği arttıran ve geliştirme sürecini azaltan bir yapısı vardır.
+- Bu yapıyı XML yapılandırmaların karmaşıklığından geliştirici kurtararak yapar. Ayrıca Java Beands ve Veritabanı işlemlerinin için esnek bir yol sunar.
+
+
+**Spring Boot nasıl çalışır?**
+
+Spring Boot **@EnableAutoConfiguration** annotation kullanarak, bağımlılık tabanlı projenize, eklemeler yaparak otomatik konfigürasyon sağlar. Örneğin MySQL kullanmak için kodlar yazdıysanız fakat herhnagi bir yapılandırma sağlmadıysanız bu annotaion ile Spring Boot sizin yerinize bu yapılnadırmaya gerçekleştirir.
+
+- Spring Boot uygulamalarının başlangıçç noktası **@SpringBootApplication** annotation'ı ve main methodu'dur.
+
+**Spring Boot Starters**
+
+Bağımlılık yönetimiyle ilgilenmek büyük projelerde zor bir görevdir. Spring Boot bu problemi, geliştiriciye uygun bağımlılık setlerini sağlayarak çözer.
+
+Örneğin, Spring kullanmak ve veritabanı için JPA kullanmak isterseniz **spring-boot-starter-data-jpa** satrırıyla ilgili bağımlılıkları projenize eklersiniz.
+
+Tüm Spring Boot başlatıcıları aynı isim kalıbını takip eder: **spring-boot-starter-\****
+\* uygulama türünü belirtir
+
+**Örnek Bağımlılıklar**
+
+```
+// **Spring Boot Starter Actuator dependency**
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+
+// **Spring Boot Starter Security dependency**
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+
+// **Spring Boot Starter web dependency**
+<dependency&gt
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+
+// **Spring Boot Starter Thyme Leaf dependency**
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
+
+// **Spring Boot Starter Test dependency**
+<dependency&gt
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-test</artifactId>
+</dependency>
+
+```
+
+
+**Otomatik Yapılandırma**
+
+
+
+
+
+
+
+
+
 
