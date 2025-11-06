@@ -32,3 +32,5 @@
 - Kolay Geliştirme:
 - Geliştirme Zorluklarını Azaltma
 - Kolay Dağıtım
+
+
