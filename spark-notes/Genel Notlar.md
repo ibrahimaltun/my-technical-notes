@@ -6,15 +6,14 @@
 
 ### PySpark nedir?
 
-* PySpark Pythonda Apache Spark için bir interface'dir. PySpark ile birlikte, dağıtık işleme ortamlarında Python ve SQL gibi komutları kullanarak veriyi manipüle ve analiz edebiliriz. Ayrıca Veri Bilimciler PySpark'ı, veriyi manipüle etmek makine öğrenmesi pipeline'ı kurmak ve modelleri tune etmek için kullanılır.
+* PySpark Pythonda Apache Spark için bir interface'dir. PySpark ile birlikte, dağıtık işleme ortamlarında Python ve SQL gibi komutları kullanarak veriyi manipüle ve analiz edebiliriz. Ayrıca Veri Bilimciler PySpark'ı, veriyi manipüle etmek, makine öğrenmesi pipeline'ı kurmak ve modelleri tune etmek için kullanılır.
 
 ### Neden PySpark?
 
 * Şirketler tarafından PySpark gibi bir framework seçimi, Verilerimizi ne kadar hızlı işleyebiliriz sorusundan ortaya çıkmıştır. Çünkü Pandas ve Dask gibi kitaplıklardan çok daha hızlıdır ve devasa miktarda verileri işleyebilir. Petabyte'lar seviyesinde verimiz varsa Pandas ve Dask fail edecektir fakat PySpark bunu kolay bir şekilde ele alabilir.
 * Şirketler Hadoop üzerinde python kodu yazmak yerine çok hızlı olması ve gerçek zamanlı veri işlemesinden dolayı Spark ve PySpark API tercih ederler.
-* Aslında Apache Flink ve PyFlink API ile birlikte performans açısından Sparktan daha iyidir fakat Apache Spark daha uzun dönemdir yayındadır ve daha iyi topluluk desteği vardır. Bu onu daha güvenilir yapar. Üstelik PySpark hata toleransı sağlar bunun anlamı bir hata meydana geldiğinde kaybı geri getirme kabileyetine sahip olmasıdır.
-* Bu framework ayrıca bellekte depolamaya ve bellekte hesaplamaya sahiptir. Hard-drive ya da SSD yüklü olmayan bir makine de çalışabilir.
-
+* Aslında Apache Flink ve PyFlink API ile birlikte performans açısından Sparktan daha iyidir fakat Apache Spark daha uzun dönemdir yayındadır ve daha iyi topluluk desteği vardır. Bu onu daha güvenilir yapar. Üstelik PySpark hata toleransı sağlar bunun anlamı **bir hata meydana geldiğinde kaybı geri getirme kabileyeti**ne sahip olmasıdır.
+* Bu framework ayrıca bellekte(**RAM**) depolamaya ve hesaplamaya sahiptir. Hard-drive(HDD) ya da SSD yüklü olmayan bir makine de çalışabilir.
 
 ### PySpark nasıl yüklenir?
 
@@ -35,8 +34,7 @@
 * SparkSession, Spark'ta tüm işlevsellikler ve bir dataframe oluşturmak için gerekli bir başlangıç noktasıdır.
 
 ``` python
-from pyspark.sql import SparkSession  # add this import
-
+from pyspark.sql import SparkSession
 
 spark = (
     SparkSession.builder
@@ -104,7 +102,3 @@ SparkSession icine spark.jars seklinde tanimlamadan da alianbiliyor. hata vermiy
 Source: https://medium.com/@sephinreji98/understanding-spark-cluster-modes-client-vs-cluster-vs-local-d3c41ea96073
 
 
-
-
-
- 
